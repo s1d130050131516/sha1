@@ -94,8 +94,7 @@ public class SHA1 {
 				} else if (j >= 60 && j <= 79) {
 					F = function4(A, B, C, D, E);
 					K = "11001010011000101100000111010110";
-				}
-				// if (j == 0) break;		
+				}					
 
 				String x = addAll(A, F, E, K, word);
 				x = x.substring(x.length() - 32, x.length());
